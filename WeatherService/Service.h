@@ -10,6 +10,7 @@ public:
 	string s;
 private:
 	virtual Weather getWeather(std::string s) = 0;
-	~Service() {};
+	virtual ~Service() {};
+
 };
 
