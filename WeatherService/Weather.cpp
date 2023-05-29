@@ -1,6 +1,6 @@
 #include "Weather.h"
 
-Weather::Weather(string city, double lon, double lat, double temperature, string weather, double windSpeed, int clouds) // Конструктор для присваивания знчений
+Weather::Weather(string city, double lon, double lat, double temperature, string weather, double windSpeed, int clouds) // Конструктор для присваивания знaчений
 {
 	this->city = city;
 	this->lon = lon;
