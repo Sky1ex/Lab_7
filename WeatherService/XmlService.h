@@ -1,5 +1,7 @@
 #include "Service.h"
 #include "Weather.h"
+#include "pugixml.hpp"
+#include "pugiconfig.hpp"
 #pragma once
 class XmlService :public Service
 {
