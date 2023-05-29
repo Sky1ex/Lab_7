@@ -1,21 +1,20 @@
 #include "json.hpp"
 #include "JsonService.h"
 #include "Service.h"
-#include "Weather.h"
+#include "pugixml.hpp"
+#include "XmlService.h"
 #include <iostream>
 #include <string>
 #include <fstream>
 
-
-
-
-using namespace std;
+using namespace pugi;
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	JsonService js;
-	Weather w = js.getWeather("weather.json");
+	XmlService xs;
+	Weather w = xs.getWeather("weather.xml");
+	w.Print();
 	return 0;
 }
 
